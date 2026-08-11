@@ -23,14 +23,18 @@ export const SidebarData = [
         heading: "Members"
     },
     {
-        icon:     UilUsersAlt,
+        icon: UilUsersAlt,
         heading: 'Providers'
     },
     {
         icon: UilChart,
         heading: 'Analytics'
+    },
+    {
+        icon: UilSetting,
+        heading: 'Settings'
     }
 ];    
 
 
-export { UilSignOutAlt, UilSetting };
+export { UilSignOutAlt };

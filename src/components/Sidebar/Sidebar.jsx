@@ -27,10 +27,10 @@ const Sidebar = () => {
                 </div>
             );
         })}
-        <div className="menuItem">
+        {/* <div className="menuItem">
             <UilSetting />
             <span>Settings</span>
-        </div>    
+        </div>     */}
         <div className="menuItem">
             <UilSignOutAlt />
             <span>Logout</span>
