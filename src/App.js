@@ -1,9 +1,15 @@
 import './App.css'
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-        Allensworth Operating System for the Behavioral Health Workforce
+      <div className="AppGlass">
+        <Sidebar />    
+        <div></div>
+        <div></div>
+        <div></div>   
+      </div>
     </div>
   );
 }
