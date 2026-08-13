@@ -5,8 +5,13 @@ import {
     UilSetting,
     UilUserPlus,
     UilCalendarAlt,
-    UilInvoice
+    UilInvoice,
+    UilBars
 } from '@iconscout/react-unicons';
+
+import img1 from "../imgs/img1.png";
+import img2 from "../imgs/img2.png";
+import img3 from "../imgs/img3.png";
 
 // Sidebar Data
 export const SidebarData = [
@@ -37,10 +42,11 @@ export const SidebarData = [
 ];    
 
 
-export { UilSignOutAlt };
+export { UilSignOutAlt, UilBars };
 
 export const CardsData = [
     {
+        id: 1,
         title: "Enrollments",
         color: {
             backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
@@ -57,6 +63,7 @@ export const CardsData = [
         ],
     },
     {
+        id: 2,
         title: "Encounters",
         color: {
             backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
@@ -73,6 +80,7 @@ export const CardsData = [
         ],
     },
     {
+        id: 3,
         title: "Billing",
         color: {
             backGround: "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",   
@@ -89,3 +97,28 @@ export const CardsData = [
         ],
     }
 ]
+
+export const UpdatesData = [
+    {
+        id:1,
+        img:img1,
+        name: "Denise Okafor",
+        noti: "completed client onboarding",
+        time: "25 seconds ago",
+    },
+    {
+        id:2,
+        img:img2,
+        name: "Marlena Smith",
+        noti: "provided housing recommendations for client",
+        time: "30 minutes ago",
+    },
+    {
+        id:3,
+        img:img3,
+        name: "Frank Jones",
+        noti: "helped client obtain state ID",
+        time: "1 hour ago",
+    },
+];
+
