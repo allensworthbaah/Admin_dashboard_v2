@@ -55,8 +55,8 @@ const ClaimsByPayerChart = () => {
     options: {
         chart: {
         type: 'donut',
-        height: 420,
-        width: '100%',
+        height: 480,
+        width: '60%',
         fontFamily: 'var(--body)',
         redrawOnParentResize: true,
         redrawOnWindowResize: true,
@@ -64,6 +64,7 @@ const ClaimsByPayerChart = () => {
       colors: payerColors,
       legend: {
         position: 'bottom',
+        offsetY: 60,
       },
       dataLabels: {
         enabled: true,
@@ -71,8 +72,9 @@ const ClaimsByPayerChart = () => {
       plotOptions: {
         pie: {
           donut: {
-            size: '60%',
+            size: '10%',
           },
+          offsetY: 40,
         },
       },
       title: {
@@ -80,7 +82,7 @@ const ClaimsByPayerChart = () => {
         align: 'left',
       },
       subtitle: {
-        text: 'Click a payer to see its status breakdown. Use the breadcrumb to go back.',
+        text: 'Click a payer to see its status breakdown.',
         align: 'left',
       },
       drilldown: {
@@ -157,7 +159,7 @@ const ClaimsByPayerChart = () => {
           series={state.series}
           type="donut"
           width="100%"
-          height={420}
+          height={350}
         />
       </div>
     </div>

@@ -2,9 +2,19 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    /* overflow-y: auto; */
 
 }
 
 #chart {
     width: 100%;
+    height:max-content;
+}
+
+.apexcharts-svg {
+    margin-bottom: 5rem;
+}
+
+#apexchartsuwktjrka {
+    margin-top: 4rem;
 }
