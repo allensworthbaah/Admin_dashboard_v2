@@ -1,14 +1,11 @@
 import {
     UilEstate,
-    UilCalendarAlt,
-    UilUser,
-    UilUsersAlt,
     UilChart,
     UilSignOutAlt,
     UilSetting,
-    UilUsdSquare,
-    UilMoneyWithdrawal,
-    UilClipboardAlt
+    UilUserPlus,
+    UilCalendarAlt,
+    UilInvoice
 } from '@iconscout/react-unicons';
 
 // Sidebar Data
@@ -18,16 +15,16 @@ export const SidebarData = [
         heading: "Dashboard"
     },
     {
+        icon: UilUserPlus,
+        heading: "Enrollments"
+    },
+    {
         icon: UilCalendarAlt,
-        heading: "Engagements"
+        heading: "Encounters"
     },
     {
-        icon: UilUser,
-        heading: "Members"
-    },
-    {
-        icon: UilUsersAlt,
-        heading: 'Providers'
+        icon: UilInvoice,
+        heading: 'Billings'
     },
     {
         icon: UilChart,
@@ -44,50 +41,50 @@ export { UilSignOutAlt };
 
 export const CardsData = [
     {
-        title: "Sales",
+        title: "Enrollments",
         color: {
             backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
             boxShadow: "0px 10px 20px 0px #e0c6f5",
         },
-        barValue: 70,
-        value: "25,970",
-        png: UilUsdSquare,
+        barValue: 90,
+        value: "187",
+        png: UilUserPlus,
         series: [
             {
-                name: "Sales",
-                data: [31, 40, 28, 51, 42, 109, 100],
+                name: "Enrollments",
+                data: [12, 35, 51, 44, 19, 15, 11],
             },
         ],
     },
     {
-        title: "Revenue",
+        title: "Encounters",
         color: {
             backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
             boxShadow: "0px 10px 20px 0px #FDC0C7",
         },
         barValue: 80,
-        value: "14,270",
-        png: UilMoneyWithdrawal,
+        value: "380",
+        png: UilInvoice,
         series: [
             {
-                name: "Revenue",
+                name: "Encounters",
                 data: [10, 100, 50, 70, 80, 30, 40],
             },
         ],
     },
     {
-        title: "Expenses",
+        title: "Billing",
         color: {
             backGround: "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",   
             boxShadow: "0px 10px 20px 0px #F9D59B",
         },
-        barValue: 60,
-        value: "4,270",
-        png: UilClipboardAlt,
+        barValue: 98,
+        value: "19,760",
+        png: UilInvoice,
         series: [
             {
-                name: "Expenses",
-                data: [10, 25, 15, 30, 12, 15, 20],
+                name: "Billing",
+                data: [520, 1300, 780, 153, 624, 780, 1040],
             },
         ],
     }

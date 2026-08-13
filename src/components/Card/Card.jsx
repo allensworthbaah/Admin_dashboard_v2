@@ -37,7 +37,11 @@ const Card = (props) => {
                 <span>{param.title}</span>
             </div>
             <div className="detail">
-                <span>${param.value}</span>
+                {param.title==="Billing" ? (
+                    <span>${param.value}</span>
+                ) : (
+                    <span>{param.value}</span>
+                )}
                 <span>Last 24 hours</span>
             </div>
         </motion.div>

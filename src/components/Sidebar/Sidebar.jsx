@@ -3,7 +3,6 @@ import Logo from '../../imgs/logo.png';
 import './Sidebar.css';
 import { SidebarData } from '../../Data/Data';
 import { UilSignOutAlt } from '../../Data/Data';
-import { UilSetting } from '../../Data/Data';
 
 const Sidebar = () => {
 
@@ -27,10 +26,6 @@ const Sidebar = () => {
                 </div>
             );
         })}
-        {/* <div className="menuItem">
-            <UilSetting />
-            <span>Settings</span>
-        </div>     */}
         <div className="menuItem">
             <UilSignOutAlt />
             <span>Logout</span>
